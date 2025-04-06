@@ -1,10 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Portafolio de Julio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julio César Guillermo - Especialista en Redes</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --light: #ecf0f1;
+            --dark: #1a252f;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--secondary);
+        }
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: var(--primary);
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .skill-card {
+            background: var(--light);
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .project-card {
+            border-left: 4px solid var(--secondary);
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            color: var(--dark);
+        }
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            header {
+                padding: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Hola! Soy Julio César Guillermo</h1>
-    <p>Especialista en Redes y Soporte Técnico</p>
+    <header>
+        <img src="https://internetenperu2025.wordpress.com/wp-content/uploads/2025/03/pasaporte-02.jpg" 
+             alt="Foto de Julio César" 
+             class="profile-img">
+        <h1>Julio César Guillermo Colca</h1>
+        <p>Jefe de Soporte Técnico y Redes</p>
+        <p>📍 Cerro de Pasco, Perú</p>
+    </header>
+
+    <section id="about">
+        <h2>Sobre Mí</h2>
+        <p>Profesional con experiencia liderando equipos técnicos, brindando soporte IT y gestionando infraestructuras de red seguras y eficientes.</p>
+        <p>📧 <a href="mailto:41925797@continetal.edu.pe">41925797@continetal.edu.pe</a> | 📞 944979705</p>
+    </section>
+
+    <section id="skills">
+        <h2>Habilidades Técnicas</h2>
+        <div class="skills-container">
+            <div class="skill-card">Redes y Telecomunicaciones</div>
+            <div class="skill-card">TCP/IP</div>
+            <div class="skill-card">Routing</div>
+            <div class="skill-card">Switching</div>
+            <div class="skill-card">Cisco Packet Tracer</div>
+            <div class="skill-card">Soporte Técnico</div>
+            <div class="skill-card">Mantenimiento HW</div>
+            <div class="skill-card">Diagnóstico de fallas</div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Formación Académica</h2>
+        <h3>Universidad Continental</h3>
+        <p>Bachiller en Ingeniería de Sistemas e Informática</p>
+        <p>2022 - 2026</p>
+    </section>
+
+    <section id="projects">
+        <h2>Proyectos Destacados</h2>
+        <div class="project-card">
+            <h3><a href="https://github.com/Julio-Cesar-Guillermo-Colca-2025">Gestión de Infraestructura de Red</a></h3>
+            <p>Simulación de red empresarial con dispositivos Cisco</p>
+            <ul>
+                <li>Configuración de switches</li>
+                <li>Topología con VLANs</li>
+            </ul>
+            <p><strong>Tecnologías:</strong> Cisco Packet Tracer, CLI</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>🔗 <a href="https://github.com/Julio-Cesar-Guillermo-Colca-2025">GitHub</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/julio-cesar-guillermo-colca-b9b24874/">LinkedIn</a></p>
+    </section>
+
+    <footer>
+        <p>© 2024 Julio César Guillermo Colca. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
