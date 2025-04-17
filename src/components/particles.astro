@@ -1,8 +1,15 @@
 import astroLogo from '../assets/astro.svg';
 import background from '../assets/background.svg';
 import profilePhoto from '../assets/pasaporte-02.jpg'; 
+import Particles from 'particles.js';
 ---
-
+<div id="particles-container"></div>
+<script>
+	Particles.init({
+	  selector: '#particles-container',
+	  // Configura tus partículas aquí
+	});
+</script>
 <div id="container">
   <img id="background" src={background.src} alt="Fondo abstracto" fetchpriority="high" />
   <main>
